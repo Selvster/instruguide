@@ -1,0 +1,1 @@
+export const API_URL = "https://accepted-bonni-selvster-e5e6faa2.koyeb.app/api";
