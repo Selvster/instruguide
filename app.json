@@ -4,7 +4,7 @@
     "slug": "instruguide",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo_cropped.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "instruguide",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,10 +13,11 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo_cropped.png",
+        "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.mazenamir2.instruguide"
     },
     "web": {
       "bundler": "metro",
@@ -44,6 +45,12 @@
         "projectId": "bf76eb6f-b000-41d2-b6e2-18080be407a8"
       }
     },
-    "owner": "mazenamir-2"
+    "owner": "mazenamir-2",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/bf76eb6f-b000-41d2-b6e2-18080be407a8"
+    }
   }
 }
