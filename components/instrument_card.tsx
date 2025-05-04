@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginRight: 12,
         backgroundColor: '#D6EFFF',
-        padding: 20
+        padding: 20,
+        resizeMode: 'contain',
     },
     content: {
         flex: 1,
