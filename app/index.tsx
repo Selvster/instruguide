@@ -1,10 +1,10 @@
+import { Redirect } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { Text, View } from 'react-native';
 import SplashScreen from './splash_screen';
-
 
 export default function Index() {
   const [showSplash, setShowSplash] = useState(true);
+ 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -13,17 +13,9 @@ export default function Index() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (showSplash) {
-    return (
-      <SplashScreen />
-    );
-  }
+  if (showSplash) return <SplashScreen />;
 
-  return (
-    <View style={{ flex: 1, backgroundColor: '#fff' }}>
-      {/* Your main app content goes here */}
-      <Text>Main App Content</Text>
-    </View>
-  )
+  return <Redirect href="/instruments" />; // Redirect to the instruments page after the splash screen
 
+  
 }

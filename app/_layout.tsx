@@ -38,7 +38,7 @@ export default function RootLayout() {
         <GestureHandlerRootView style={{ flex: 1 }}>
           <Slot />
         </GestureHandlerRootView>
-        <StatusBar style="light" backgroundColor="#107764" />
+        <StatusBar style="dark" backgroundColor="#1C355E" />
       </APIProvider>
     </>
   );
